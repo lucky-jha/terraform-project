@@ -8,7 +8,6 @@ resource "aws_instance" "my_instance" {
         Name = "sample-instance" #this is the name of instance
     }
     vpc_security_group_ids = [aws_security_group.nginx-sg.id]
-    #security_groups = [aws_security_group.nginx-sg.name]
     associate_public_ip_address = true
 
 
