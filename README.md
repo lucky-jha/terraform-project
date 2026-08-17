@@ -29,3 +29,17 @@ Terraform project that provisions an Amazon S3 bucket for hosting a static websi
              └──────┬──────┘
                     ▼
              Static Website
+'''text
+                    AWS
+                     │
+                    VPC
+                     │
+          ┌──────────┴──────────┐
+          │                     │
+     Public Subnet         Private Subnet
+          │                     │
+         EC2                  Resources
+          │
+        Nginx
+          │
+      Web Server
